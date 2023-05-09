@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@100;500&display=swap%27');
+
+:root{
+    --background-budy: #ffffff;
+    --background-nav: #003566;
+    --background-footer: #5e6472;
+    --sombra: #001d3d;
+}
+
+*{
+    margin: 0;      
+    padding: 0;
+    box-sizing:border-box;
+}
+
+p{
+    font-family: 'lato', Roboto;
+    margin-bottom: 1.5rem
+}
+
+h1,
+h2,
+h3,
+a{
+    font-family: 'lato', cursive;
+    letter-spacing: 3px;
+    font-weight: 800;
+    color: var(--background-footer)
+}
+
+h1{
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+a{
+    text-decoration: none;
+}
+
+h2,h3{
+    text-align: center;
+}
+
+body{
+    background-color: var(--background-budy);
+}
+
+
+
+nav{
+    margin: 0 auto;
+    width: 80vw;
+    background-color: var(--background-nav);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 2.25rem 1.5rem;
+    box-shadow: 2px 2px 5px var(--sombra);
+}
+
+.logo{
+    display: flex;
+    width: 20%;
+    justify-content: left;
+    position: relative;
+    align-items: center;
+}
+
+.icone{
+width: 5rem;
+padding-left: 1rem;
+}
+
+.titulo{
+font-family: 'lato' , cursive;
+color: white;
+font-size: 1.5rem;
+letter-spacing: 3px;
+font-weight: 800;
+}
+
+
+ul{
+list-style: none;
+align-items: center;
+display: flex;
+gap: 1rem;
+font-size: 24px;
+}
+
+nav a{
+    color: white;
+}
+
+main{
+width: 80vw;
+margin: 0 auto;
+
+}
+
+#sobre{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #bbdefb;
+    border-radius: 16px;
+    gap: 20px;
+    font-weight: 800;
+
+}
+
+.foto{
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--sombra);
+}
+
+.video{
+    width: 30vw;
+    margin: 50px auto;
+    align-items: center;
+    display: flex;
+}
+
+footer{
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.redes{
+    width: 45px;
+    padding: 0 0.5rem;
+}
+.by{
+    display: flex;
+    padding-top: 0.25rem;
+   
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+/*ESTILIZAR FORMULÁRIO*/
+
+
+hr{
+    margin: 1rem;
+    
+}
+label{
+    font-family: 'lato' , Roboto;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 800;
+
+
+}
+
+.endereco {
+    font-family: 'lato', Roboto;
+    color: var(--background-footer);
+    font-size: 1rem;
+}
+
+input,
+textarea,
+button{
+    font-family: 'lato' , Roboto;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    color: black;
+    
+}
+
+.contato {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    padding: 50px
+}
+
+button{
+    font-family: 'lato' , Roboto;
+    background-color: var(--background-footer);
+    font-weight: 800;
+    color: white;
+}
+
+
+
+button:hover{
+    background-color: var(--background-nav)
+    
+}
+input::placeholder
+textarea::placeholder{
+    color: var(--background-footer);
+    
+}
+h3{
+    color: black;
+    font-weight: 800;
+
+}
+.campos-form {
+    margin-bottom: 1rem;
+}
+
