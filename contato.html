@@ -34,12 +34,12 @@
                 <h3>Contato</h3>
                 <div class="campos-form">
                     <label for="nome">Nome:</label>
-                    <input id="nome" type="text" placeholder="Insira o seu nome completo">
+                    <input onkeyup="validarNome()" id="nome" type="text" placeholder="Insira o seu nome completo">
                     <div id="txtNome"></div>
                 </div>
                 <divclass="campos-form">
                     <label for="email">E-mail:</label>
-                    <input id="email" type="text" placeholder="Insira o seu e-mail">
+                    <input onkeyup="validarEmailRegEx()" id="email" type="text" placeholder="Insira o seu e-mail">
                     <div id="txtEmail"></div>
                     </div>
                     <div class="campos-form">
@@ -47,7 +47,7 @@
                         <textarea id="mensagem" type="text" rows="8" placeholder="Deixe sua mensagem..."></textarea>
                         <div id="txtMensagem"></div>
                     </div>
-                    <button ype="button">
+                    <button onclick="enviarFormulario()" type="button">
                         Enviar
                     </button>
             </form>
@@ -60,7 +60,7 @@
             <input id="cep" type="text" placeholder="Digite o número do CEP">
             <div id="txtCep"></div>
         </div>
-        <button ype="button">
+        <button onclick="consultarCep()" type="button">
             Consultar
         </button>
         <hr>
@@ -87,8 +87,7 @@
         <p class="by">Desenvolvido por Gabriel Machado - 2023 &copy;</p>
 
     </footer>
-
-
+    <script src = "./assets/js/script.js"></scriptsrc></script>
 </body>
 
 </html>
